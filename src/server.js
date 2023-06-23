@@ -70,7 +70,7 @@ io.on('createNote', (fields) => {
 // =============================================================================
 async function startServer() {
   try {
-    const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/notes';
+    const MONGO_URL = process.env.MONGO_URI || 'mongodb://localhost/notes';
     await mongoose.connect(MONGO_URL);
     // setting the promises to the ES6 Promises
     mongoose.Promise = global.Promise;
