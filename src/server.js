@@ -5,7 +5,7 @@ import morgan from 'morgan';
 import mongoose from 'mongoose';
 import socketio from 'socket.io'
 import http from 'http'
-import * as Notes from './contollers/note_controller'
+import * as Notes from './controllers/note_controler'
 import throttle from 'lodash.throttle';
 import debounce from 'lodash.debounce';
 
